@@ -128,3 +128,124 @@ footer {
   left: 0;
   width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .add-form {
+    flex-direction: column;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .add-form input {
+    font-size: 1rem;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  td {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: none;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .add-form input {
+    padding: 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 1.5rem;
+  }
+
+  td {
+    font-size: 0.9rem;
+  }
+}
+
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  main {
+    width: 100%;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  h1 {
+    color: black;
+  }
+
+  .add-form,
+  button,
+  select {
+    display: none;
+  }
+
+  table {
+    width: 100%;
+    font-size: 12pt;
+  }
+
+  td,
+  th {
+    border: 1px solid black;
+  }
+}
